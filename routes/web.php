@@ -52,3 +52,6 @@ Route::fallback(function()
 {
     echo "Esta página não existe! <a href='".route('site.index')."'>Clique aqui</a> para voltar para a página principal";
 });
+
+//Rota de teste enviando parâmetros para as views
+Route::get('/teste/{p1}/{p2}', 'TesteController@teste')->name('teste');
