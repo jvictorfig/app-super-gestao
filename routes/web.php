@@ -36,7 +36,7 @@ Route::prefix('/app')->group(function()
 
     Route::get('/produtos', function(){ return 'Produtos';})->name('app.produtos');
 
-    Route::get('/fornecedores', function(){ return 'Fornecedores';})->name('app.fornecedores');
+    Route::get('/fornecedores', 'FornecedorController@index')->name('app.fornecedores');
 });
 
 //Redirecionamento de rotas
